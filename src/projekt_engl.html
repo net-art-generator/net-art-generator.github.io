@@ -1,0 +1,165 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<META name="keywords" content="net.art generator, Netzkunstgenerator, net art, net.art, Netzkunst, Internet art, Medienkunst, media art, digitale Kunst digital art, Dada, dada, random, authorship, copyright, collage">
+	<title>NAG</title>
+	<link rel=stylesheet type='text/css' href='css/style.css'>
+	<script LANGUAGE="JavaScript">
+		<!--
+		function surfer(URL) {
+			window.open(URL, "");
+		}
+
+		var neu = null;
+
+		function UnCryptMailto(s, shift) {
+			var n = 0;
+			var r = "";
+			for (var i = 0; i < s.length; i++) {
+				n = s.charCodeAt(i);
+				if (n >= 8364) {
+					n = 128;
+				}
+				r += String.fromCharCode(n - (shift));
+			}
+			return r;
+		}
+
+		function linkTo_UnCryptMailto(s, shift) {
+			location.href = UnCryptMailto(s, shift);
+		}
+		var bilder = new Array();
+		bilder['genNorm'] = new Image();
+		bilder['genNorm'].src = "imgs/m/gen.gif";
+		bilder['genOver'] = new Image();
+		bilder['genOver'].src = "imgs/m/gen_o.gif";
+
+		bilder['souNorm'] = new Image();
+		bilder['souNorm'].src = "imgs/m/sou.gif";
+		bilder['souOver'] = new Image();
+		bilder['souOver'].src = "imgs/m/sou_o.gif";
+
+		bilder['texNorm'] = new Image();
+		bilder['texNorm'].src = "imgs/m/tex.gif";
+		bilder['texOver'] = new Image();
+		bilder['texOver'].src = "imgs/m/tex_o.gif";
+
+		bilder['imaNorm'] = new Image();
+		bilder['imaNorm'].src = "imgs/m/ima.gif";
+		bilder['imaOver'] = new Image();
+		bilder['imaOver'].src = "imgs/m/ima_o.gif";
+
+		bilder['conNorm'] = new Image();
+		bilder['conNorm'].src = "imgs/m/con.gif";
+		bilder['conOver'] = new Image();
+		bilder['conOver'].src = "imgs/m/con_o.gif";
+
+		bilder['linNorm'] = new Image();
+		bilder['linNorm'].src = "imgs/m/lin.gif";
+		bilder['linOver'] = new Image();
+		bilder['linOver'].src = "imgs/m/lin_o.gif";
+
+
+		function NSreload(init) {
+			if (init == true) with(navigator) {
+				if ((appName == "Netscape") && (parseInt(appVersion) == 4)) {
+					document.PW = innerWidth;
+					document.PH = innerHeight;
+					onresize = NSreload;
+				}
+			}
+			else if (innerWidth != document.PW || innerHeight != document.PH) location.reload();
+		}
+
+		NSreload(true);
+
+		var ie4 = ((document.all) && (navigator.appVersion.indexOf('MSIE 4') != -1)) ? true : false;
+		var ie5 = ((document.getElementById) && (navigator.appVersion.indexOf('MSIE 5') != -1)) ? true : false;
+		var ie6 = ((document.getElementById) && (navigator.appVersion.indexOf('MSIE 6') != -1)) ? true : false;
+		var ns4 = ((document.layers) && (navigator.appVersion.indexOf('4') != -1)) ? true : false;
+		var ns6 = ((document.getElementById) && (navigator.appName == 'Netscape')) ? true : false;
+		var opera = (navigator.appName == 'Opera') ? true : false;
+		var LayerAktiv = false;
+
+		function mover(LayerName, BildName, Kennung) {
+			if (document.images) {
+				if (ns4) {
+					document.layers[LayerName].document.images[BildName].src = bilder[Kennung].src;
+				}
+				if (ie4) {
+					document.all[LayerName].document.images[BildName].src = bilder[Kennung].src;
+				}
+				if ((ns6) || (ie5) || (ie6) || (opera)) {
+					document.getElementById(BildName).src = bilder[Kennung].src;
+				}
+			}
+		}
+
+		//
+		-->
+	</script>
+</head>
+
+<body bgcolor="#fcf4e0" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0">
+	<div id="logo" style="position:absolute; left:55px; top:58px; z-index:2"><a href="../index.html"><img src="imgs/c/logo.gif" alt="net.art logo" width="127" height="93" border="0"></a></div>
+	<div id="linie1" style="position:absolute; left:65px; top:437px; z-index:2"><img src="imgs/c/linie1.gif" alt="image: linie" width="143" height="28" border="0"></div>
+	<div id="linie2" style="position:absolute; left:197px; top:51px; z-index:2"><img src="imgs/c/linie2.gif" alt="image: linie" width="11" height="386" border="0"></div>
+
+	<!--  MENUE  -->
+	<div id="punkte" style="position:absolute; left:50px; top:515px; width:86px; height:13px; z-index:2"><img src="imgs/m/punkte.gif" alt="image: points" width="29" height="49" border="0"></div>
+	<div id="mGen" style="position:absolute; left:50px; top:470px; width:86px; height:13px; z-index:10"><a href="gen.html" onmouseover="mover('mGen','generators','genOver')" onmouseout="mover('mGen','generators','genNorm')"><img border="0"
+				src="imgs/m/gen.gif" width="120" height="19" name="generators" id="generators" alt="generators"></a></div>
+	<div id="mTex" style="position:absolute; left:117px; top:489px; width:72px; height:13px; z-index:10"><a href="tex.html" onmouseover="mover('mTex','texts','texOver')" onmouseout="mover('mTex','texts','texNorm')"><img border="0" src="imgs/m/tex.gif"
+				width="41" height="13" name="texts" id="texts" alt="texts"></a></div>
+	<div id="mIma" style="position:absolute; left:92px; top:504px; width:72px; height:13px; z-index:10"><a href="imgs.html" onmouseover="mover('mIma','ima','imaOver')" onmouseout="mover('mIma','ima','imaNorm')"><img border="0" src="imgs/m/ima.gif"
+				width="58" height="13" name="ima" id="ima" alt="images"></a></div>
+	<div id="mSou" style="position:absolute; left:105px; top:518px; width:95px; height:13px; z-index:10"><a href="sou.html" onmouseover="mover('mSou','source','souOver')" onmouseout="mover('mSou','source','souNorm')"><img border="0"
+				src="imgs/m/sou.gif" width="95" height="13" name="source" id="source" alt="source code"></a></div>
+	<div id="mCon" style="position:absolute; left:87px; top:532px; width:65px; height:13px; z-index:10"><a href="javascript:linkTo_UnCryptMailto('thps{vAjvyulsphGhy{~hyl5vyn', 7);" onmouseover="mover('mCon','contact','conOver')"
+			onmouseout="mover('mCon','contact','conNorm')"><img border="0" src="imgs/m/con.gif" width="65" height="13" name="contact" id="contact" alt="contact"></a></div>
+	<div id="mLin" style="position:absolute; left:82px; top:546px; width:39px; height:13px; z-index:10"><a href="lin.html" onmouseover="mover('mLin','linkis','linOver')" onmouseout="mover('mLin','linkis','linNorm')"><img border="0" src="imgs/m/lin.gif"
+				width="39" height="13" name="linkis" id="linkis" alt="links"></a></div>
+
+	<!--  CONTENT  -->
+	<div id="content" class="black10" style="position:absolute; left:250px; top:58px; width:700px; z-index:20">
+
+		<span class="cyanbold10">A smart artist makes the machine do the work!</span>
+		<br /><br />
+		The net.art generator is a computer program which collects and recombines material from the Internet to create a new website or a new image. The program requires the user to enter a title which
+		then functions as the search keyword, and to enter a name as the author. The program can easily be used through a WWW interface. The resulting images and websites are stored online in an archive
+		from where they can be downloaded. Since 1999 five different versions of the net.art generator have been realized in collaboration with six programmers: nag_01 to nag_05. A predecessor of the
+		net.art generator has been in use for the project female extension.
+		<br /><br />
+		Although it would be possible to solve the type of problem which the net.art generators address by using different programmming languages, all the programmers so far have chosen PERL. One reason
+		for this might be that it is quite popular within the hacker scene as it is free software and compatible with other free software. Furthermore, the Comprehensive Perl Archive Network (CPAN)
+		contains a huge number of modules which can be used as basic elements for the net.art generators.
+		<br /><br />
+		The first net.art generator nag_01 was developed in 1999 in collaboration with Ryan Johnston from Banff Media Center, Canada. nag_01 loads one or several selected suitable images in the background,
+		and then adds layers containing text and single images on top of it. The result is a new website which often looks like a graphic design.
+		<br /><br />
+		nag_02 was designed in the same year by the Slovenian hacker Luka Frelih. On my suggestion he followed Andrew Bulhak's Dada-Engine. It took up to 30 minutes for the very complex PERL script to
+		produce it's result, which was mainly characterized by the surprising creation of new words or combinations of words, and by little use of images. The resulting websites consisted of a number of
+		inter-linked webpages. This version of net.art generator has been out of order since 2002, but it's working principle is still comprehensible by looking at the stored websites in the archive.
+		<br /><br />
+		nag_03 was programmed by Hamburg-based hackers Barbara Thoens and Ralf Prehn. Compared to more complex versions of net.art generator, this simple and robust script is very stable and runs reliably,
+		mainly processing images.
+		<br /><br />
+		nag_04 is a version of the program which reworks images only. The related search-engine Google Images provides the material. I developed the concept for nag_04 in 2003 together with the programmer
+		Panos Galanis, from Hamburg based company iap. Parts of the found images are manipulated and recombined with the help of a random-generator driven collage technique. The images are processed by
+		ImageMagick on the server, and the result is a new image. This version of the net.art generator was a commission by Volksfürsorge Insurances and is now part of their art collection.
+		<br /><br />
+		nag_05, (also known as moiNAG by it's programmer Richard Leopold), was also conceived and realised in 2003, and shows structural similarities to nag_02 by also following Bulhak's Dada-Engine.
+		This most recent version of net.art generator focusses on text processing although it is also possible to integrate images into the new websites. Markov chains are used to &quot;write&quot; the
+		texts. A special feature of nag_05 is that it calculates the formatting tags for the new website from tags of the found websites.
+		<br /><br />
+		Since 2003 all net.art generator scripts are available under GPL (GNU General Public License) on the project's homepage: <a href="sou.html">source code</a>
+		<br /><br />
+		Special thanks to all programmers for their enthusiasm and commitment.
+		<br /><br />
+	</div>
+</body>
+
+</html>

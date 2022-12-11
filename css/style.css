@@ -1,0 +1,347 @@
+body {
+  background-color: #fcf4e0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  topmargin: 0;
+  leftmargin: 0;
+}
+
+img {
+  border-style: none;
+  margin-bottom: -3px;
+}
+
+area {
+  outline: none;
+}
+
+td {
+  padding-right: 10px;
+  padding-bottom: 5px;
+  vertical-align: top;
+}
+
+#netartgenerator {
+  position: fixed;
+  left: 20px;
+  top: 25px;
+  z-index: 2;
+}
+
+#smartartist {
+  position: fixed;
+  left: 96px;
+  top: 94px;
+  z-index: 2;
+}
+
+#create {
+  position: fixed;
+  left: 20px;
+  top: 246px;
+  z-index: 2;
+}
+
+#hand {
+  position: fixed;
+  left: 26px;
+  top: 264px;
+  z-index: 10;
+}
+
+#menue {
+  position: fixed;
+  left: 815px;
+  top: 32px;
+  z-index: 2;
+}
+
+#leftbtn {
+  position: absolute;
+  left: 200px;
+  top: 290px;
+}
+
+#rightbtn {
+  position: absolute;
+  left: 730px;
+  top: 290px;
+}
+
+#rahmen {
+  position: absolute;
+  left: 255px;
+  top: 150px;
+  width: 461px;
+  height: 296px;
+  border: 1px dashed black;
+}
+
+#schaufenster {
+  position: absolute;
+  left: 256px;
+  top: 151px;
+  width: 461px;
+  height: 296px;
+}
+
+#bu {
+  position: absolute;
+  left: 254px;
+  top: 452px;
+}
+
+#zaehler {
+  position: absolute;
+  left: 644px;
+  top: 452px;
+  width: 70px;
+}
+
+#leftbtnE {
+  position: absolute;
+  left: 200px;
+  top: 175px;
+}
+
+#rightbtnE {
+  position: absolute;
+  left: 730px;
+  top: 175px;
+}
+
+#rahmenE {
+  position: absolute;
+  left: 255px;
+  top: 35px;
+  width: 461px;
+  height: 296px;
+  border: 1px dashed black;
+}
+
+#schaufensterE {
+  position: absolute;
+  left: 256px;
+  top: 36px;
+  width: 461px;
+  height: 296px;
+}
+
+#buE {
+  position: absolute;
+  left: 254px;
+  top: 337px;
+}
+
+#zaehlerE {
+  position: absolute;
+  left: 644px;
+  top: 337px;
+  width: 70px;
+}
+
+input {
+  font-family: 'dejavu_sansbook';
+  font-size: 10px;
+  color: #00a9e0;
+  text-align: right;
+  border-style: none;
+  background-color: #fcf4e0;
+}
+
+textarea {
+  font-family: 'dejavu_sansbook';
+  font-size: 10px;
+  color: #000000;
+  text-align: left;
+  width: 390px;
+  height: 100px;
+  border-style: none;
+  background-color: #fcf4e0;
+  resize: none;
+  overflow: auto;
+}
+
+#content {
+  position: relative;
+  left: 200px;
+  top: 77px;
+  z-index: 20;
+  width: 550px;
+}
+
+#contenttable {
+  position: relative;
+  left: 200px;
+  top: 75px;
+  z-index: 20;
+  width: 590px;
+}
+
+#contenttableE {
+  position: relative;
+  left: 200px;
+  top: 420px;
+  z-index: 20;
+  width: 590px;
+}
+
+#ogFlowers {
+  position: relative;
+  width: 550px;
+  height: 550px;
+  display: block;
+}
+
+#artwarez {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+/*  TYPO  */
+@font-face {
+  font-family: 'dejavu_sansbook';
+  src: url('../webfonts/DejaVuSans-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dejavu_sansbold';
+  src: url('../webfonts/DejaVuSans-Bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.menu {
+  font-family: 'dejavu_sansbold';
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  text-decoration: none;
+  text-align: left;
+}
+
+.menu a {
+  font-family: 'dejavu_sansbold';
+  font-size: 12px;
+  line-height: 15px;
+  color: #00a9e0;
+  text-decoration: none;
+  text-align: left;
+}
+
+.menu a:hover {
+  font-family: 'dejavu_sansbold';
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  text-decoration: none;
+  text-align: left;
+}
+
+.black9 {
+  font-family: 'dejavu_sansbook';
+  font-size: 9px;
+  font-style: normal;
+  line-height: 14px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.black10 {
+  font-family: 'dejavu_sansbold';
+  font-size: 10px;
+  font-style: normal;
+  line-height: 14px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.black11 {
+  font-family: 'dejavu_sansbook';
+  font-size: 11px;
+  font-style: normal;
+  line-height: 15px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.black11 a {
+  font-family: 'dejavu_sansbook';
+  font-size: 11px;
+  font-style: normal;
+  line-height: 14px;
+  color: #00a9e0;
+  text-decoration: underline;
+}
+
+.black11 a:hover {
+  font-family: 'dejavu_sansbook';
+  font-size: 11px;
+  font-style: normal;
+  line-height: 14px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.black12 {
+  font-family: 'dejavu_sansbook';
+  font-size: 12px;
+  font-style: normal;
+  line-height: 15px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.black12 a {
+  font-family: 'dejavu_sansbook';
+  font-size: 12px;
+  font-style: normal;
+  line-height: 15px;
+  color: #00a9e0;
+  text-decoration: underline;
+}
+
+.black12 a:hover {
+  font-family: 'dejavu_sansbook';
+  font-size: 12px;
+  font-style: normal;
+  line-height: 15px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.cyan10 {
+  font-family: 'dejavu_sansbold';
+  font-size: 10px;
+  font-style: normal;
+  line-height: 14px;
+  color: #00a9e0;
+  text-decoration: none;
+}
+
+.cyan11 {
+  font-family: 'dejavu_sansbold';
+  font-size: 11px;
+  font-style: normal;
+  line-height: 14px;
+  color: #00a9e0;
+  text-decoration: none;
+}
+
+.ei11 {
+  font-family: 'dejavu_sansbook';
+  font-size: 11px;
+  font-style: normal;
+  line-height: 14px;
+  color: #fcf4e0;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: underline;
+  color: #00AEEF
+}

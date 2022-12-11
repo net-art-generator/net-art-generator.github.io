@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <META name="keywords" content="net.art generator, Netzkunstgenerator, net art, net.art, Netzkunst, Internet art, Medienkunst, media art, digitale Kunst digital art, Dada, dada, random, authorship, copyright, collage">
+  <title>NAG</title>
+  <link rel=stylesheet type='text/css' href='css/style.css'>
+  <script LANGUAGE="JavaScript">
+    <!--
+    var neu = null;
+
+    function UnCryptMailto(s, shift) {
+      var n = 0;
+      var r = "";
+      for (var i = 0; i < s.length; i++) {
+        n = s.charCodeAt(i);
+        if (n >= 8364) {
+          n = 128;
+        }
+        r += String.fromCharCode(n - (shift));
+      }
+      return r;
+    }
+
+    function linkTo_UnCryptMailto(s, shift) {
+      location.href = UnCryptMailto(s, shift);
+    }
+    var bilder = new Array();
+    bilder['genNorm'] = new Image();
+    bilder['genNorm'].src = "imgs/m/gen.gif";
+    bilder['genOver'] = new Image();
+    bilder['genOver'].src = "imgs/m/gen_o.gif";
+
+    bilder['souNorm'] = new Image();
+    bilder['souNorm'].src = "imgs/m/sou.gif";
+    bilder['souOver'] = new Image();
+    bilder['souOver'].src = "imgs/m/sou_o.gif";
+
+    bilder['texNorm'] = new Image();
+    bilder['texNorm'].src = "imgs/m/tex.gif";
+    bilder['texOver'] = new Image();
+    bilder['texOver'].src = "imgs/m/tex_o.gif";
+
+    bilder['imaNorm'] = new Image();
+    bilder['imaNorm'].src = "imgs/m/ima.gif";
+    bilder['imaOver'] = new Image();
+    bilder['imaOver'].src = "imgs/m/ima_o.gif";
+
+    bilder['conNorm'] = new Image();
+    bilder['conNorm'].src = "imgs/m/con.gif";
+    bilder['conOver'] = new Image();
+    bilder['conOver'].src = "imgs/m/con_o.gif";
+
+    bilder['linNorm'] = new Image();
+    bilder['linNorm'].src = "imgs/m/lin.gif";
+    bilder['linOver'] = new Image();
+    bilder['linOver'].src = "imgs/m/lin_o.gif";
+
+
+    function NSreload(init) {
+      if (init == true) with(navigator) {
+        if ((appName == "Netscape") && (parseInt(appVersion) == 4)) {
+          document.PW = innerWidth;
+          document.PH = innerHeight;
+          onresize = NSreload;
+        }
+      }
+      else if (innerWidth != document.PW || innerHeight != document.PH) location.reload();
+    }
+
+    NSreload(true);
+
+    var ie4 = ((document.all) && (navigator.appVersion.indexOf('MSIE 4') != -1)) ? true : false;
+    var ie5 = ((document.getElementById) && (navigator.appVersion.indexOf('MSIE 5') != -1)) ? true : false;
+    var ie6 = ((document.getElementById) && (navigator.appVersion.indexOf('MSIE 6') != -1)) ? true : false;
+    var ns4 = ((document.layers) && (navigator.appVersion.indexOf('4') != -1)) ? true : false;
+    var ns6 = ((document.getElementById) && (navigator.appName == 'Netscape')) ? true : false;
+    var opera = (navigator.appName == 'Opera') ? true : false;
+    var LayerAktiv = false;
+
+    function mover(LayerName, BildName, Kennung) {
+      if (document.images) {
+        if (ns4) {
+          document.layers[LayerName].document.images[BildName].src = bilder[Kennung].src;
+        }
+        if (ie4) {
+          document.all[LayerName].document.images[BildName].src = bilder[Kennung].src;
+        }
+        if ((ns6) || (ie5) || (ie6) || (opera)) {
+          document.getElementById(BildName).src = bilder[Kennung].src;
+        }
+      }
+    }
+
+    //
+    -->
+  </script>
+</head>
+
+<body bgcolor="#fcf4e0" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0">
+  <div id="logo" style="position:absolute; left:55px; top:58px; z-index:2"><a href="../index.html"><img src="imgs/c/logo.gif" alt="net.art logo" width="127" height="93" border="0"></a></div>
+  <div id="linie1" style="position:absolute; left:65px; top:437px; z-index:2"><img src="imgs/c/linie1.gif" alt="image: linie" width="143" height="28" border="0"></div>
+  <div id="linie2" style="position:absolute; left:197px; top:51px; z-index:2"><img src="imgs/c/linie2.gif" alt="image: linie" width="11" height="386" border="0"></div>
+
+  <!--  MENUE  -->
+  <div id="punkte" style="position:absolute; left:50px; top:515px; width=:86px; height:13px; z-index:2"><img src="imgs/m/punkte.gif" alt="image: points" width="29" height="49" border="0"></div>
+  <div id="mGen" style="position:absolute; left:50px; top:470px; width=:86px; height:13px; z-index:10"><a href="gen.html" onmouseover="mover('mGen','generators','genOver')" onmouseout="mover('mGen','generators','genNorm')"><img border="0"
+        src="imgs/m/gen.gif" width="120" height="19" name="generators" id="generators" alt="generators"></a></div>
+  <div id="mTex" style="position:absolute; left:117px; top:489px; width:72px; height:13px; z-index:10"><a href="tex.html" onmouseover="mover('mTex','texts','texOver')" onmouseout="mover('mTex','texts','texNorm')"><img border="0" src="imgs/m/tex.gif"
+        width="41" height="13" name="texts" id="texts" alt="texts"></a></div>
+  <div id="mIma" style="position:absolute; left:92px; top:504px; width:72px; height:13px; z-index:10"><a href="imgs.html" onmouseover="mover('mIma','ima','imaOver')" onmouseout="mover('mIma','ima','imaNorm')"><img border="0" src="imgs/m/ima.gif"
+        width="58" height="13" name="ima" id="ima" alt="images"></a></div>
+  <div id="mSou" style="position:absolute; left:105px; top:518px; width:95px; height:13px; z-index:10"><a href="sou.html" onmouseover="mover('mSou','source','souOver')" onmouseout="mover('mSou','source','souNorm')"><img border="0"
+        src="imgs/m/sou.gif" width="95" height="13" name="source" id="source" alt="source code"></a></div>
+  <div id="mCon" style="position:absolute; left:87px; top:532px; width:65px; height:13px; z-index:10"><a href="javascript:linkTo_UnCryptMailto('thps{vAjvyulsphGhy{~hyl5vyn', 7);" onmouseover="mover('mCon','contact','conOver')"
+      onmouseout="mover('mCon','contact','conNorm')"><img border="0" src="imgs/m/con.gif" width="65" height="13" name="contact" id="contact" alt="contact"></a></div>
+  <div id="mLin" style="position:absolute; left:82px; top:546px; width:39px; height:13px; z-index:10"><a href="lin.html" onmouseover="mover('mLin','linkis','linOver')" onmouseout="mover('mLin','linkis','linNorm')"><img border="0" src="imgs/m/lin.gif"
+        width="39" height="13" name="linkis" id="linkis" alt="links"></a></div>
+
+  <!--
+<!~~  CONTENT  ~~>
+<table border="0" width="90%">
+<tr>
+
+<td rowspan="2" align="left" valign="top">
+<img src="imgs/1x1blank.gif" alt="" width="230" height="1" border="0">
+</td>
+
+<td align="left" valign="top">
+<img src="imgs/1x1blank.gif" alt="" width="262" height="60" border="0">
+</td>
+
+<td align="left" valign="top">
+<img src="imgs/1x1blank.gif" alt="" width="262" height="60" border="0">
+</td>
+
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<img src="imgs/c/bremen_1.jpg" alt="" width="252" height="187" border="0"><br /><br />
+<img src="imgs/c/bremen_2.jpg" alt="" width="252" height="188" border="0"><br /><br />
+<img src="imgs/c/bremen_3.jpg" alt="" width="252" height="198" border="0"><br /><br />
+<img src="imgs/c/bremen_4.jpg" alt="" width="252" height="185" border="0"><br /><br />
+</td>
+
+<td class="cyanbold10" align="left" valign="top">
+Serialit&auml;t: Reihen und Netze<br /><br />
+
+St&auml;dt. Galerie, Bremen<br />
+November 5 - December 9, 1999<br /><br />
+<img src="imgs/c/bremen_5.jpg" alt="" width="252" height="192" border="0"><br /><br />
+<img src="imgs/c/bremen_6.jpg" alt="" width="252" height="187" border="0"><br /><br />
+<img src="imgs/c/bremen_7.jpg" alt="" width="252" height="188" border="0"><br /><br />
+<img src="imgs/c/bremen_8.jpg" alt="" width="252" height="198" border="0"><br /><br />
+
+</td>
+</tr>
+
+
+</table>
+-->
+
+  <!--  CONTENT  -->
+  <div id="content" class="black10" style="position:absolute; left:250px; top:58px; width:700px; z-index:20">
+    <table border="0" width="600">
+      <tr>
+        <td align="left" valign="top">
+          <img src="imgs/c/bremen_1.jpg" alt="" width="252" height="187" border="0"><br /><br />
+          <img src="imgs/c/bremen_2.jpg" alt="" width="252" height="188" border="0"><br /><br />
+          <img src="imgs/c/bremen_3.jpg" alt="" width="252" height="198" border="0"><br /><br />
+          <img src="imgs/c/bremen_4.jpg" alt="" width="252" height="185" border="0"><br /><br />
+        </td>
+
+        <td class="cyanbold10" align="left" valign="top">
+          Serialit&auml;t: Reihen und Netze<br /><br />
+
+          St&auml;dt. Galerie, Bremen<br />
+          November 5 - December 9, 1999<br /><br />
+          <img src="imgs/c/bremen_5.jpg" alt="" width="252" height="192" border="0"><br /><br /><br />
+          <img src="imgs/c/bremen_6.jpg" alt="" width="252" height="187" border="0"><br /><br /><br />
+          <img src="imgs/c/bremen_7.jpg" alt="" width="252" height="188" border="0"><br /><br /><br />
+          <img src="imgs/c/bremen_8.jpg" alt="" width="252" height="198" border="0"><br /><br /><br />
+        </td>
+      </tr>
+
+    </table>
+  </div>
+</body>
+
+</html>

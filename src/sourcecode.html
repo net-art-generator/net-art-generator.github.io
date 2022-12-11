@@ -1,0 +1,142 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <META name="keywords" content="net.art generator, Netzkunstgenerator, net art, net.art, Netzkunst, Internet art, Medienkunst, media art, digitale Kunst digital art, Dada, dada, random, authorship, copyright, collage">
+  <title>NAG - sourcecode</title>
+  <link rel=stylesheet type='text/css' href='css/style.css'>
+  <script type="text/javascript">
+    /*<![CDATA[*/
+    <!--
+    function UnCryptMailto(s) {
+      var n = 0;
+      var r = "";
+      for (var i = 0; i < s.length; i++) {
+        n = s.charCodeAt(i);
+        if (n >= 8364) {
+          n = 128;
+        }
+        r += String.fromCharCode(n - (1));
+      }
+      return r;
+    }
+
+    function linkTo_UnCryptMailto(s) {
+      location.href = UnCryptMailto(s);
+    }
+    // -->
+    /*]]>*/
+    css
+  </script>
+  <script type="text/javascript">
+    <!--
+    var neu = null;
+
+    var bilder = new Array();
+    bilder['genNorm'] = new Image();
+    bilder['genNorm'].src = "imgs/m/gen.gif";
+    bilder['genOver'] = new Image();
+    bilder['genOver'].src = "imgs/m/gen_o.gif";
+    bilder['matNorm'] = new Image();
+    bilder['matNorm'].src = "imgs/m/mat.gif";
+    bilder['matOver'] = new Image();
+    bilder['matOver'].src = "imgs/m/mat_o.gif";
+    bilder['galNorm'] = new Image();
+    bilder['galNorm'].src = "imgs/m/gal.gif";
+    bilder['galOver'] = new Image();
+    bilder['galOver'].src = "imgs/m/gal_o.gif";
+    bilder['souNorm'] = new Image();
+    bilder['souNorm'].src = "imgs/m/sou.gif";
+    bilder['souOver'] = new Image();
+    bilder['souOver'].src = "imgs/m/sou_o.gif";
+    bilder['conNorm'] = new Image();
+    bilder['conNorm'].src = "imgs/m/con.gif";
+    bilder['conOver'] = new Image();
+    bilder['conOver'].src = "imgs/m/con_o.gif";
+
+
+    function NSreload(init) {
+      if (init == true) with(navigator) {
+        if ((appName == "Netscape") && (parseInt(appVersion) == 4)) {
+          document.PW = innerWidth;
+          document.PH = innerHeight;
+          onresize = NSreload;
+        }
+      }
+      else if (innerWidth != document.PW || innerHeight != document.PH) location.reload();
+    }
+
+    NSreload(true);
+
+    var ie4 = ((document.all) && (navigator.appVersion.indexOf('MSIE 4') != -1)) ? true : false;
+    var ie5 = ((document.getElementById) && (navigator.appVersion.indexOf('MSIE 5') != -1)) ? true : false;
+    var ie6 = ((document.getElementById) && (navigator.appVersion.indexOf('MSIE 6') != -1)) ? true : false;
+    var ie7 = ((document.getElementById) && (navigator.appVersion.indexOf('MSIE 7') != -1)) ? true : false;
+    var ie8 = ((document.getElementById) && (navigator.appVersion.indexOf('MSIE 8') != -1)) ? true : false;
+    var ie9 = ((document.getElementById) && (navigator.appVersion.indexOf('MSIE 9') != -1)) ? true : false;
+    var ie10 = ((document.getElementById) && (navigator.appVersion.indexOf('MSIE 10') != -1)) ? true : false;
+    var ns4 = ((document.layers) && (navigator.appVersion.indexOf('4') != -1)) ? true : false;
+    var ns6 = ((document.getElementById) && (navigator.appName == 'Netscape')) ? true : false;
+    var opera = (navigator.appName == 'Opera') ? true : false;
+    var LayerAktiv = false;
+
+    //browsererkennung
+    var isMinNS4 = (navigator.appName.indexOf("Netscape") >= 0 && parseFloat(navigator.appVersion) >= 4 && parseFloat(navigator.appVersion) < 5) ? 1 : 0;
+    var isMinNS6 = (isMinNS4 && navigator.userAgent.indexOf("Gecko") >= 0) ? 1 : 0;
+    var isMinIE4 = (document.all) ? 1 : 0;
+    var isMinIE5 = (isMinIE4 && navigator.appVersion.indexOf("5.")) >= 0 ? 1 : 0;
+    var isDOM = (document.getElementById) ? 1 : 0;
+    var isMac = (navigator.appVersion.indexOf("Mac", 0) >= 0) ? 1 : 0;
+    var isOpera = (navigator.userAgent.toLowerCase().indexOf('opera') >= 0) ? 1 : 0;
+
+    function mover(LayerName, BildName, Kennung) {
+      if (document.images) {
+        if (ns4) {
+          document.layers[LayerName].document.images[BildName].src = bilder[Kennung].src;
+        }
+        if (ie4) {
+          document.all[LayerName].document.images[BildName].src = bilder[Kennung].src;
+        }
+        if ((ns6) || (ie5) || (ie6) || (ie7) || (ie8) || (ie9) || (ie10) || (opera)) {
+          document.getElementById(BildName).src = bilder[Kennung].src;
+        }
+      }
+    }
+    //
+    -->
+  </script>
+</head>
+
+<body>
+  <div id="logo" style="position:absolute; left:55px; top:58px; z-index:2"><a href="../index.html"><img src="imgs/c/logo.gif" alt="net.art logo" width="127" height="93" /></a></div>
+  <div id="linie1" style="position:absolute; left:73px; top:433px; z-index:2"><img src="imgs/c/linie1.gif" alt="image: linie" width="143" height="28" /></div>
+  <div id="linie2" style="position:absolute; left:205px; top:51px; z-index:2"><img src="imgs/c/linie2.gif" alt="image: linie" width="11" height="386" /></div>
+
+  <!--  MENUE  -->
+  <div id="mGen" style="position:absolute; left:72px; top:470px; z-index:10"><a href="generators.html" onmouseover="mover('mGen','generators','genOver')" onmouseout="mover('mGen','generators','genNorm')"><img src="imgs/m/gen.gif" width="147"
+        height="24" name="generators" id="generators" alt="generators" /></a></div>
+  <div id="mMat" style="position:absolute; left:72px; top:500px; z-index:10"><a href="materials.html" onmouseover="mover('mMat','mat','matOver')" onmouseout="mover('mMat','mat','matNorm')"><img src="imgs/m/mat.gif" width="80" height="17" name="mat"
+        id="mat" alt="materials" /></a></div>
+  <div id="mGal" style="position:absolute; left:72px; top:517px; z-index:10"><a href="gallery.html" onmouseover="mover('mGal','gal','galOver')" onmouseout="mover('mGal','gal','galNorm')"><img src="imgs/m/gal.gif" width="72" height="17" name="gal"
+        id="gal" alt="gallery" /></a></div>
+  <div id="mSou" style="position:absolute; left:72px; top:534px; z-index:10"><img src="imgs/m/sou_a.gif" width="103" height="17" name="source" id="source" alt="source code" /></div>
+  <div id="mCon" style="position:absolute; left:72px; top:551px; z-index:10"><a href="javascript:linkTo_UnCryptMailto('nbjmup;obhAbsuxbsf{/psh');" onmouseover="mover('mCon','contact','conOver')" onmouseout="mover('mCon','contact','conNorm')"><img
+        src="imgs/m/con.gif" width="74" height="17" name="contact" id="contact" alt="contact" /></a></div>
+
+  <!-- CONTENT  -->
+  <div id="content" class="blackbolditalic10" style="position:absolute; left:250px; top:150px; z-index:20">
+    nag_05&nbsp;&nbsp; <a href="../source/nag_05_b.zip">nag_05_b.zip (updated 2017)</a><br /><br />
+    <br /><br />
+    nag_05&nbsp;&nbsp; <a href="../source/nag-iap.zip">nag-iap.zip</a><br /><br />
+    nag_04&nbsp;&nbsp; <a href="../source/moiNAG.tgz">moiNAG.tgz</a><br /><br />
+    nag_03&nbsp;&nbsp; <a href="../source/nag-003.tgz">nag-003.tgz</a><br /><br />
+    nag_02&nbsp;&nbsp; (no code available)<br /><br />
+    nag_01&nbsp;&nbsp; <a href="../source/nag-ryan.tgz">nag-ryan.tgz</a><br /><br />
+
+
+  </div>
+</body>
+
+</html>

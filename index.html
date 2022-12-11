@@ -1,0 +1,147 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<META name="description" content="net.art generator">
+	<META name="keywords" content="net.art generator, Netzkunstgenerator, net art, net.art, Netzkunst, Internet art, Medienkunst, media art, digitale Kunst digital art, Dada, dada, random, authorship, copyright, collage">
+	<META name="author" content="cornelia sollfrank">
+	<title>NAG</title>
+
+	<script src="js/scripts.js" type="text/javascript"></script>
+	<link rel=stylesheet type='text/css' href='css/style.css' />
+	<script type="text/javascript">
+		var bildAktiv = 1;
+
+		aktualisieren();
+
+		function aktualisieren() {
+			changer('big', 'imgs/schaufenster/nag_' + bildAktiv + '.jpg');
+			document.getElementById("bildnummer").value = "" + bildAktiv + " / 35";
+
+			if (bildAktiv == 1) {
+				document.getElementById("bildunterschrift").value = "anonymous_warhol-flowers, This is not by me, Kunstverein Hildesheim (2006)";
+			} else if (bildAktiv == 2) {
+				document.getElementById("bildunterschrift").value = "I DON’T KNOW, video interview with Andy Warhol, Visual Research Centre, DCA Dundee (2012)";
+			} else if (bildAktiv == 3) {
+				document.getElementById("bildunterschrift").value = "anonymous-warhol_flowers, Unlimited Edition, Mejan Labs, Stockholm (2009)";
+			} else if (bildAktiv == 4) {
+				document.getElementById("bildunterschrift").value = "Legal Perspective, video installation, [plug.in], Forum for New Media, Basel, CH (2004)";
+			} else if (bildAktiv == 5) {
+				document.getElementById("bildunterschrift").value = "copyright © cornelia sollfrank 2004, video of lecture performance, Public Library, WOS3, Berlin (2004)";
+			} else if (bildAktiv == 6) {
+				document.getElementById("bildunterschrift").value = "nag_machine installation, sketch for Art Machines - Machine Art exhibition, Schirn Kunsthalle Frankfurt (2007)";
+			} else if (bildAktiv == 7) {
+				document.getElementById("bildunterschrift").value = "anonymous-warhol_flowers, prints and wall painting, Porn to Pizza, DAM Gallery Berlin (2015)";
+			} else if (bildAktiv == 8) {
+				document.getElementById("bildunterschrift").value = "anonymous-warhol_flowers, digital print, 70x70cm, collector’s home, Berlin (2019)";
+			} else if (bildAktiv == 9) {
+				document.getElementById("bildunterschrift").value = "anonymous-warhol_flowers, Sharing Strategies, silk screen printing workshop, Arteleku (2008)";
+			} else if (bildAktiv == 10) {
+				document.getElementById("bildunterschrift").value = "anonymous-warhol_flowers, silk screen prints, Unlimited Edition, Mejan Labs, Stockholm (2009)";
+			} else if (bildAktiv == 11) {
+				document.getElementById("bildunterschrift").value = "nag_machine, server installation, Art Machines – Machine Art, Schirn Kunsthalle Frankfurt (2007)";
+			} else if (bildAktiv == 12) {
+				document.getElementById("bildunterschrift").value = "Printed postcard of nag error message. Since Google’s change of API policy in 2016 the program can only generate 100 images per day.";
+			} else if (bildAktiv == 13) {
+				document.getElementById("bildunterschrift").value = "nag_extension, projection of generated images during the exhibition, ZKM, Writing the history of the Future (2019-21)";
+			} else if (bildAktiv == 14) {
+				document.getElementById("bildunterschrift").value = "nag_extension, projection of generated images during the exhibition, ZKM, Writing the history of the Future (2019-21)";
+			} else if (bildAktiv == 15) {
+				document.getElementById("bildunterschrift").value = "nag_extension, projection of generated images during the exhibition, ZKM, Writing the history of the Future (2019-21)";
+			} else if (bildAktiv == 16) {
+				document.getElementById("bildunterschrift").value = "nag_machine, server installation, Art Machines – Machine Art, MuseumTinguely Basel (2008)";
+			} else if (bildAktiv == 17) {
+				document.getElementById("bildunterschrift").value = "net.art generator, Cornelia Sollfrank, Verlag für moderne Kunst Nürnberg (2004)";
+			} else if (bildAktiv == 18) {
+				document.getElementById("bildunterschrift").value = "It’s so easy to make your own net.art, business cards for various exhibitions";
+			} else if (bildAktiv == 19) {
+				document.getElementById("bildunterschrift").value = "Stamp of net.art generator original signum.";
+			} else if (bildAktiv == 20) {
+				document.getElementById("bildunterschrift").value = "nag_machine and Leibniz’ calculator, installation view, Calculemus – Lasst uns rechnen (Let’s calculate), Representation of Niedersachsen at the Federal Government in Berlin (2009)";
+			} else if (bildAktiv == 21) {
+				document.getElementById("bildunterschrift").value = "Opening, Calculemus – Lasst uns rechnen (Let’s calculate), Representation of Niedersachsen at the Federal Government in Berlin (2009)";
+			} else if (bildAktiv == 22) {
+				document.getElementById("bildunterschrift").value = "nag_code, print out, installation view, exhibition Calculemus – Lasst uns rechnen (Let’s calculate), Representation of Niedersachsen at the Federal Government in Berlin (2009)";
+			} else if (bildAktiv == 23) {
+				document.getElementById("bildunterschrift").value = "expanded Original, Cornelia Sollfrank, Hatje Cantz (2010)";
+			} else if (bildAktiv == 24) {
+				document.getElementById("bildunterschrift").value = "nag_01, America under attack, series, print, Networked Reality, Gallery 21, Malmö, SE (2001)";
+			} else if (bildAktiv == 25) {
+				document.getElementById("bildunterschrift").value = "nag_01, America under attack, series, print, Networked Reality, Gallery 21, Malmö, SE (2001)";
+			} else if (bildAktiv == 26) {
+				document.getElementById("bildunterschrift").value = "nag_02 (generated website, nag_archive)";
+			} else if (bildAktiv == 27) {
+				document.getElementById("bildunterschrift").value = "nag_03 (generated website, nag_archive)";
+			} else if (bildAktiv == 28) {
+				document.getElementById("bildunterschrift").value = "nag_01, America under attack, series, print, Networked Reality, Gallery 21, Malmö, SE (2001)";
+			} else if (bildAktiv == 29) {
+				document.getElementById("bildunterschrift").value = "nag_02, (generated website, nag_archive)";
+			} else if (bildAktiv == 30) {
+				document.getElementById("bildunterschrift").value = "First homepage of net.art generator, automatically generated design, 1999.";
+			} else if (bildAktiv == 31) {
+				document.getElementById("bildunterschrift").value = "anonymous-warhol_flowers and I DON’T KNOW, video interview with Andy Warhol, Tools of Distorted Creativity, transmediale (2013)";
+			} else if (bildAktiv == 32) {
+				document.getElementById("bildunterschrift").value = "anonymous-warhol_flowers, Cultures of the Copy, Goethe Institut HongKong, 2010";
+			} else if (bildAktiv == 33) {
+				document.getElementById("bildunterschrift").value = "anonymous-warhol_flowers and Legal Perspective, exhibition Anna Kournikova Deleted By Memeright Trusted Systems, HMKV, Dortmund (2008)";
+			} else if (bildAktiv == 34) {
+				document.getElementById("bildunterschrift").value = "nag_machine (Chinese copy), exhibition We=Link: Sideways, Chronus Art Center, Shanghai, 2020. © Chronus Art Center, Leon Eckert";
+			} else if (bildAktiv == 35) {
+				document.getElementById("bildunterschrift").value = "net.art generator  and nag_extension, installation view in exhibition „Open Codes. Networked Commons,“ Nam June Paik Art Center, Seoul, 2021. © Nam June Paik Art Center, Bak Hyongryol";
+			}
+		}
+
+
+		function vor() {
+			if (bildAktiv < 35) {
+				bildAktiv++;
+				aktualisieren();
+			} else if (bildAktiv == 35) {
+				bildAktiv = 1;
+				aktualisieren();
+
+			}
+		}
+
+		function zurueck() {
+			if (bildAktiv > 1) {
+				bildAktiv--;
+				aktualisieren();
+			} else if (bildAktiv = 1) {
+				bildAktiv = 35;
+				aktualisieren();
+			}
+		}
+
+		function changer(imgid, imgurl) {
+			eval('document.images.' + imgid + '.src = "' + imgurl + '"');
+		}
+		//-->
+	</script>
+</head>
+
+<body>
+	<div id="netartgenerator"><img src="imgs/netartgenerator.gif" alt="net.art" width="140" height="69" /></div>
+	<div id="smartartist"><img src="imgs/smart.gif" alt="a smart artist makes the machine do the work!" width="71" height="122" /></div>
+	<div id="create"><a href="http://nag.iap.de" target="_blank"><img src="imgs/create.gif" alt="net.art" width="76" height="30" /></a></div>
+	<div id="hand"><img src="imgs/hand.png" alt="" width="20" height="45" /></div>
+
+	<div id="rahmen"></div>
+
+	<div id="leftbtn"><a href="javascript:zurueck()"><img src="imgs/lbtn.gif" alt="" width="45" height="21" /></a></div>
+	<div id="schaufenster"><img src="imgs/schaufenster/nag_1.jpg" name="big" id="big" alt="" width="461" height="296" /></div>
+	<div id="rightbtn"><a href="javascript:vor()"><img src="imgs/rbtn.gif" alt="" width="43" height="26" /></a></div>
+
+	<div id="bu"><textarea id="bildunterschrift" value="a" maxlength="20" size="30" />anonymous_warhol-flowers, solo exhibition This is not by me, Kunstverein Hildesheim, 2006</textarea></div>
+	<div id="zaehler"><input type="text" id="bildnummer" value="1 / 35" maxlength="20" size="10" /></div>
+
+
+	<div id="menue" class="menu">nag_home<br /><a href="about.html">about</a><br /><a href="exhibitions.html">exhibitions</a><br /><a href="projects.html">projects</a><br /><a href="zkm.html">nag@zkm</a><br /><a href="nags.html">net.art
+			generators</a><br /><a href="publications.html">publications</a><br /><a href="contact.html">contact</a></div>
+	<div id="artwarez"><a href="https://artwarez.org" target="_blank"><img src="imgs/artwarez.png" alt="artwarez" width="105" height="35"></a></div>
+
+</body>
+
+</html>

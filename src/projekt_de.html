@@ -1,0 +1,168 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<META name="keywords" content="net.art generator, Netzkunstgenerator, net art, net.art, Netzkunst, Internet art, Medienkunst, media art, digitale Kunst digital art, Dada, dada, random, authorship, copyright, collage">
+	<title>NAG</title>
+	<link rel=stylesheet type='text/css' href='css/style.css'>
+	<script LANGUAGE="JavaScript">
+		<!--
+		function surfer(URL) {
+			window.open(URL, "");
+		}
+
+		function UnCryptMailto(s, shift) {
+			var n = 0;
+			var r = "";
+			for (var i = 0; i < s.length; i++) {
+				n = s.charCodeAt(i);
+				if (n >= 8364) {
+					n = 128;
+				}
+				r += String.fromCharCode(n - (shift));
+			}
+			return r;
+		}
+
+		function linkTo_UnCryptMailto(s, shift) {
+			location.href = UnCryptMailto(s, shift);
+		}
+		var neu = null;
+
+		var bilder = new Array();
+		bilder['genNorm'] = new Image();
+		bilder['genNorm'].src = "imgs/m/gen.gif";
+		bilder['genOver'] = new Image();
+		bilder['genOver'].src = "imgs/m/gen_o.gif";
+
+		bilder['souNorm'] = new Image();
+		bilder['souNorm'].src = "imgs/m/sou.gif";
+		bilder['souOver'] = new Image();
+		bilder['souOver'].src = "imgs/m/sou_o.gif";
+
+		bilder['texNorm'] = new Image();
+		bilder['texNorm'].src = "imgs/m/tex.gif";
+		bilder['texOver'] = new Image();
+		bilder['texOver'].src = "imgs/m/tex_o.gif";
+
+		bilder['imaNorm'] = new Image();
+		bilder['imaNorm'].src = "imgs/m/ima.gif";
+		bilder['imaOver'] = new Image();
+		bilder['imaOver'].src = "imgs/m/ima_o.gif";
+
+		bilder['conNorm'] = new Image();
+		bilder['conNorm'].src = "imgs/m/con.gif";
+		bilder['conOver'] = new Image();
+		bilder['conOver'].src = "imgs/m/con_o.gif";
+
+		bilder['linNorm'] = new Image();
+		bilder['linNorm'].src = "imgs/m/lin.gif";
+		bilder['linOver'] = new Image();
+		bilder['linOver'].src = "imgs/m/lin_o.gif";
+
+
+		function NSreload(init) {
+			if (init == true) with(navigator) {
+				if ((appName == "Netscape") && (parseInt(appVersion) == 4)) {
+					document.PW = innerWidth;
+					document.PH = innerHeight;
+					onresize = NSreload;
+				}
+			}
+			else if (innerWidth != document.PW || innerHeight != document.PH) location.reload();
+		}
+
+		NSreload(true);
+
+		var ie4 = ((document.all) && (navigator.appVersion.indexOf('MSIE 4') != -1)) ? true : false;
+		var ie5 = ((document.getElementById) && (navigator.appVersion.indexOf('MSIE 5') != -1)) ? true : false;
+		var ie6 = ((document.getElementById) && (navigator.appVersion.indexOf('MSIE 6') != -1)) ? true : false;
+		var ns4 = ((document.layers) && (navigator.appVersion.indexOf('4') != -1)) ? true : false;
+		var ns6 = ((document.getElementById) && (navigator.appName == 'Netscape')) ? true : false;
+		var opera = (navigator.appName == 'Opera') ? true : false;
+		var LayerAktiv = false;
+
+		function mover(LayerName, BildName, Kennung) {
+			if (document.images) {
+				if (ns4) {
+					document.layers[LayerName].document.images[BildName].src = bilder[Kennung].src;
+				}
+				if (ie4) {
+					document.all[LayerName].document.images[BildName].src = bilder[Kennung].src;
+				}
+				if ((ns6) || (ie5) || (ie6) || (opera)) {
+					document.getElementById(BildName).src = bilder[Kennung].src;
+				}
+			}
+		}
+
+		//
+		-->
+	</script>
+</head>
+
+<body bgcolor="#fcf4e0" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0">
+	<div id="logo" style="position:absolute; left:55px; top:58px; z-index:2"><a href="../index.html"><img src="imgs/c/logo.gif" alt="net.art logo" width="127" height="93" border="0"></a></div>
+	<div id="linie1" style="position:absolute; left:65px; top:437px; z-index:2"><img src="imgs/c/linie1.gif" alt="image: linie" width="143" height="28" border="0"></div>
+	<div id="linie2" style="position:absolute; left:197px; top:51px; z-index:2"><img src="imgs/c/linie2.gif" alt="image: linie" width="11" height="386" border="0"></div>
+
+	<!--  MENUE  -->
+	<div id="punkte" style="position:absolute; left:50px; top:515px; width:86px; height:13px; z-index:2"><img src="imgs/m/punkte.gif" alt="image: points" width="29" height="49" border="0"></div>
+	<div id="mGen" style="position:absolute; left:50px; top:470px; width:86px; height:13px; z-index:10"><a href="gen.html" onmouseover="mover('mGen','generators','genOver')" onmouseout="mover('mGen','generators','genNorm')"><img border="0"
+				src="imgs/m/gen.gif" width="120" height="19" name="generators" id="generators" alt="generators"></a></div>
+	<div id="mTex" style="position:absolute; left:117px; top:489px; width:72px; height:13px; z-index:10"><a href="tex.html" onmouseover="mover('mTex','texts','texOver')" onmouseout="mover('mTex','texts','texNorm')"><img border="0" src="imgs/m/tex.gif"
+				width="41" height="13" name="texts" id="texts" alt="texts"></a></div>
+	<div id="mIma" style="position:absolute; left:92px; top:504px; width:72px; height:13px; z-index:10"><a href="imgs.html" onmouseover="mover('mIma','ima','imaOver')" onmouseout="mover('mIma','ima','imaNorm')"><img border="0" src="imgs/m/ima.gif"
+				width="58" height="13" name="ima" id="ima" alt="images"></a></div>
+	<div id="mSou" style="position:absolute; left:105px; top:518px; width:95px; height:13px; z-index:10"><a href="sou.html" onmouseover="mover('mSou','source','souOver')" onmouseout="mover('mSou','source','souNorm')"><img border="0"
+				src="imgs/m/sou.gif" width="95" height="13" name="source" id="source" alt="source code"></a></div>
+	<div id="mCon" style="position:absolute; left:87px; top:532px; width:65px; height:13px; z-index:10"><a href="javascript:linkTo_UnCryptMailto('thps{vAjvyulsphGhy{~hyl5vyn', 7);" onmouseover="mover('mCon','contact','conOver')"
+			onmouseout="mover('mCon','contact','conNorm')"><img border="0" src="imgs/m/con.gif" width="65" height="13" name="contact" id="contact" alt="contact"></a></div>
+	<div id="mLin" style="position:absolute; left:82px; top:546px; width:39px; height:13px; z-index:10"><a href="lin.html" onmouseover="mover('mLin','linkis','linOver')" onmouseout="mover('mLin','linkis','linNorm')"><img border="0" src="imgs/m/lin.gif"
+				width="39" height="13" name="linkis" id="linkis" alt="links"></a></div>
+
+	<!--  CONTENT  -->
+	<div id="content" class="black10" style="position:absolute; left:250px; top:58px; width:700px; z-index:20">
+
+		<span class="cyanbold10">A smart artist makes the machine do the work!</span>
+		<br /><br />
+		Die Netzkunstgeneratoren sind Computerprogramme, die nach Eingabe eines Titels und eines (K&uuml;nstler-)Namens im Internet vorhandenes Material sammeln und zu einem neuen Werk rekombinieren. Der eingegebene
+		Titel dient dabei als Suchbegriff. &Uuml;ber ein WWW-Interface k&ouml;nnen die Programme leicht bedient werden. Die Ergebnisse werden online in einem Archiv gespeichert und stehen zum freien Download zur
+		Verf&uuml;gung. Seit 1999 entstanden in Zusammenarbeit mit sechs Programmierern f&uuml;nf unterschiedliche Versionen: nag_01 bis nag_05. Einen Vorl&auml;ufer des Netzkunstgenerators habe ich im Rahmen von
+		<i>female extension</i> eingesetzt.
+		<br /><br />
+		Obwohl die Aufgabenstellung des Netzkunstgenerators auch unter Einsatz einer anderen Programmiersprache gel&ouml;st werden k&ouml;nnte, entschieden sich alle Programmierer/-innen f&uuml;r die Programmiersprache
+		PERL. Ein Grund hierf&uuml;r mag sein, dass PERL im Hackerumfeld, dem die Pogrammierer/-innen der nags entstammen, besonders beliebt ist, weil es sich dabei um freie Software handelt bzw. damit kompatibel ist
+		und ausserdem im &quot;Comprehensive Perl Archive Network&quot; (CPAN) eine gro&szlig;e Anzahl von fertigen Modulen vorhanden ist, die als Grundbausteine f&uuml;r den Netzkunstgenerator verwendet werden
+		k&ouml;nnen.
+		<br /><br />
+		Der erste Netzkunstgenerator nag_01 entstand 1999 und wurde in Zusammenarbeit mit Ryan Johnston vom Banff Media Center in Kanada entwickelt. nag_01 l&auml;dt ein oder mehrere geeignete Bilder in den Hintergrund
+		und legt mehrere Schichten von Text und einzelne andere Bilder dar&uuml;ber. Als Resultat bekommt man eine neue Website, die die Anmutung einer Grafik besitzt.
+		<br /><br />
+		nag_02 entstand im selben Jahr und wurde von dem slowenischen Hacker und Programmierer Luka Frelih auf meine Anregung hin in Anlehnung an Andrew Bulhaks Dada-Engine gestaltet. Das sehr komplexe PERL-Script,
+		das sich durch die kreative Erfindung neuer W&ouml;rter und Wortkombinationen und einen eher sparsamen Einsatz von Bildern auszeichnet, ben&ouml;tigte von der Eingabe des Suchbegriffs zur Fertigstellung bis
+		zu 30 Minuten. Die neu enstandene Website besteht aus einer Vielzahl von einzelnen, miteinander verlinkten Seiten. Diese Version ist seit 2002 au&szlig;er Betrieb; die Funktionsweise ist aber noch durch im
+		Archiv zug&auml;ngliche Werke nachvollziehbar.
+		<br /><br />
+		nag_03 wurde im Jahr 2000 von den Hamburger Hackern Barbara Thoens und Ralf Prehn entwickelt. Das im Vergleich zu den anderen Netzkunstgeneratoren eher einfache Programm verarbeitet haupts&auml;chlich Bilder,
+		die unver&auml;ndert aneinander gereiht werden und zeichnet sich durch gro&szlig;e Zuverl&auml;ssigkeit und Stabilit&auml;t aus.
+		<br /><br />
+		nag_04 ist ein Programm, das nur mit Bildern arbeitet und das Material zur Weiterverarbeitung ausschliesslich von der Google Bildersuchmaschine bezieht. Zusammen mit dem Programmierer Panos Galanis von der
+		Hamburger Firma iap entwickelte ich 2003 diese Programmversion, die Teile der gefundenen Bilder manipuliert und in einem zufalls-gesteuerten Collageverfahren zu einem neuen Bild zusammenbaut. Die
+		Bildverarbeitung findet serverseitig unter Anwendung von ImageMagick statt. Dieser Netzkunstgenerator war eine Auftragsarbeit f&uuml;r die Kunstsammlung der Volksf&uuml;rsorge Versicherungen und ist nun Teil
+		der Sammlung.
+		<br /><br />
+		nag_05, von seinem Programmierer Richard Leopold auch moiNAG genannt, entstand ebenfalls im Jahr 2003 und besitzt strukturelle &auml;hnlichkeit mit dem nag_02. Diese Programmversion lehnt sich ebenfalls an die
+		Dada-Engine von Bulhak an und konzentriert sich auf die Verarbeitung von Texten, obwohl durchaus auch Bilder in die neu entstehenden Webseiten eingebunden werden k&ouml;nnen. Zum &quot;Schreiben&quot; der
+		neuen Texte werden Markov-Ketten eingesetzt. Ein besonderes Feature von nag_05 besteht darin, aus den HTML-Formatierungen der verarbeiteten Webseiten die Formatierung der neuen Seite zu errechnen.
+		<br /><br />
+		Seit 2003 stehen alle Netzkunstgeneratoren unter der GPL (Gnu General Public License) und k&ouml;nnen von der Website heruntergeladen werden. (<a href="sou.html">source code</a>)
+		<br /><br />
+		Mein besonderer Dank gilt den Programmierer/-innen f&uuml;r ihre Begeisterung und ihr Engagment.
+		<br /><br />
+	</div>
+</body>
+
+</html>

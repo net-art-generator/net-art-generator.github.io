@@ -1,0 +1,174 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<META name="keywords" content="net.art generator, Netzkunstgenerator, net art, net.art, Netzkunst, Internet art, Medienkunst, media art, digitale Kunst digital art, Dada, dada, random, authorship, copyright, collage">
+	<title>nag_04 - net.art as Collector's Object</title>
+	<link rel=stylesheet type='text/css' href='css/style.css'>
+	<script LANGUAGE="JavaScript">
+		<!--
+		function surfer(URL) {
+			window.open(URL, "");
+		}
+
+		function UnCryptMailto(s, shift) {
+			var n = 0;
+			var r = "";
+			for (var i = 0; i < s.length; i++) {
+				n = s.charCodeAt(i);
+				if (n >= 8364) {
+					n = 128;
+				}
+				r += String.fromCharCode(n - (shift));
+			}
+			return r;
+		}
+
+		function linkTo_UnCryptMailto(s, shift) {
+			location.href = UnCryptMailto(s, shift);
+		}
+		var neu = null;
+
+		var bilder = new Array();
+		bilder['genNorm'] = new Image();
+		bilder['genNorm'].src = "imgs/m/gen.gif";
+		bilder['genOver'] = new Image();
+		bilder['genOver'].src = "imgs/m/gen_o.gif";
+
+		bilder['souNorm'] = new Image();
+		bilder['souNorm'].src = "imgs/m/sou.gif";
+		bilder['souOver'] = new Image();
+		bilder['souOver'].src = "imgs/m/sou_o.gif";
+
+		bilder['texNorm'] = new Image();
+		bilder['texNorm'].src = "imgs/m/tex.gif";
+		bilder['texOver'] = new Image();
+		bilder['texOver'].src = "imgs/m/tex_o.gif";
+
+		bilder['imaNorm'] = new Image();
+		bilder['imaNorm'].src = "imgs/m/ima.gif";
+		bilder['imaOver'] = new Image();
+		bilder['imaOver'].src = "imgs/m/ima_o.gif";
+
+		bilder['conNorm'] = new Image();
+		bilder['conNorm'].src = "imgs/m/con.gif";
+		bilder['conOver'] = new Image();
+		bilder['conOver'].src = "imgs/m/con_o.gif";
+
+		bilder['linNorm'] = new Image();
+		bilder['linNorm'].src = "imgs/m/lin.gif";
+		bilder['linOver'] = new Image();
+		bilder['linOver'].src = "imgs/m/lin_o.gif";
+
+
+		function NSreload(init) {
+			if (init == true) with(navigator) {
+				if ((appName == "Netscape") && (parseInt(appVersion) == 4)) {
+					document.PW = innerWidth;
+					document.PH = innerHeight;
+					onresize = NSreload;
+				}
+			}
+			else if (innerWidth != document.PW || innerHeight != document.PH) location.reload();
+		}
+
+		NSreload(true);
+
+		var ie4 = ((document.all) && (navigator.appVersion.indexOf('MSIE 4') != -1)) ? true : false;
+		var ie5 = ((document.getElementById) && (navigator.appVersion.indexOf('MSIE 5') != -1)) ? true : false;
+		var ie6 = ((document.getElementById) && (navigator.appVersion.indexOf('MSIE 6') != -1)) ? true : false;
+		var ns4 = ((document.layers) && (navigator.appVersion.indexOf('4') != -1)) ? true : false;
+		var ns6 = ((document.getElementById) && (navigator.appName == 'Netscape')) ? true : false;
+		var opera = (navigator.appName == 'Opera') ? true : false;
+		var LayerAktiv = false;
+
+		function mover(LayerName, BildName, Kennung) {
+			if (document.images) {
+				if (ns4) {
+					document.layers[LayerName].document.images[BildName].src = bilder[Kennung].src;
+				}
+				if (ie4) {
+					document.all[LayerName].document.images[BildName].src = bilder[Kennung].src;
+				}
+				if ((ns6) || (ie5) || (ie6) || (opera)) {
+					document.getElementById(BildName).src = bilder[Kennung].src;
+				}
+			}
+		}
+
+		//
+		-->
+	</script>
+</head>
+
+<body bgcolor="#fcf4e0" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0">
+	<div id="logo" style="position:absolute; left:55px; top:58px; z-index:2"><a href="../index.html"><img src="imgs/c/logo.gif" alt="net.art logo" width="127" height="93" border="0"></a></div>
+	<div id="linie1" style="position:absolute; left:65px; top:437px; z-index:2"><img src="imgs/c/linie1.gif" alt="image: linie" width="143" height="28" border="0"></div>
+	<div id="linie2" style="position:absolute; left:197px; top:51px; z-index:2"><img src="imgs/c/linie2.gif" alt="image: linie" width="11" height="386" border="0"></div>
+
+	<!--  MENUE  -->
+	<div id="punkte" style="position:absolute; left:50px; top:515px; width:86px; height:13px; z-index:2"><img src="imgs/m/punkte.gif" alt="image: points" width="29" height="49" border="0"></div>
+	<div id="mGen" style="position:absolute; left:50px; top:470px; width:86px; height:13px; z-index:10"><a href="gen.html" onmouseover="mover('mGen','generators','genOver')" onmouseout="mover('mGen','generators','genNorm')"><img border="0"
+				src="imgs/m/gen.gif" width="120" height="19" name="generators" id="generators" alt="generators"></a></div>
+	<div id="mTex" style="position:absolute; left:117px; top:489px; width:72px; height:13px; z-index:10"><a href="tex.html" onmouseover="mover('mTex','texts','texOver')" onmouseout="mover('mTex','texts','texNorm')"><img border="0" src="imgs/m/tex.gif"
+				width="41" height="13" name="texts" id="texts" alt="texts"></a></div>
+	<div id="mIma" style="position:absolute; left:92px; top:504px; width:72px; height:13px; z-index:10"><a href="imgs.html" onmouseover="mover('mIma','ima','imaOver')" onmouseout="mover('mIma','ima','imaNorm')"><img border="0" src="imgs/m/ima.gif"
+				width="58" height="13" name="ima" id="ima" alt="images"></a></div>
+	<div id="mSou" style="position:absolute; left:105px; top:518px; width:95px; height:13px; z-index:10"><a href="sou.html" onmouseover="mover('mSou','source','souOver')" onmouseout="mover('mSou','source','souNorm')"><img border="0"
+				src="imgs/m/sou.gif" width="95" height="13" name="source" id="source" alt="source code"></a></div>
+	<div id="mCon" style="position:absolute; left:87px; top:532px; width:65px; height:13px; z-index:10"><a href="javascript:linkTo_UnCryptMailto('thps{vAjvyulsphGhy{~hyl5vyn', 7);" onmouseover="mover('mCon','contact','conOver')"
+			onmouseout="mover('mCon','contact','conNorm')"><img border="0" src="imgs/m/con.gif" width="65" height="13" name="contact" id="contact" alt="contact"></a></div>
+	<div id="mLin" style="position:absolute; left:82px; top:546px; width:39px; height:13px; z-index:10"><a href="lin.html" onmouseover="mover('mLin','linkis','linOver')" onmouseout="mover('mLin','linkis','linNorm')"><img border="0" src="imgs/m/lin.gif"
+				width="39" height="13" name="linkis" id="linkis" alt="links"></a></div>
+
+	<!--  CONTENT  -->
+	<div id="content" class="black10" style="position:absolute; left:250px; top:58px; width:700px; z-index:20">
+
+		<span class="cyanbold10">net.art as Collectors' Object<br /><br /><br /></span>
+
+		Cornelia Sollfrank in conversation with Dr. Joachim Lemppenau, Chairman of the Board of Volksf&uuml;rsorge Versicherungen. As head of the
+		insurance company, he is also responsible for the art collection and, as a jury member, took part in the selection of the
+		artists.<br /><br />
+
+		Hamburg, November 1, 2003<br /><br />
+
+		C.S.: You've acquired one of my net.art generators for your collection. The purchase of a Net art work makes you a pioneer among
+		collectors. What moved you to take this step and introduce Net art to the collection as well?<br /><br />
+
+		Dr.L.: The net.art generator is a contemporary work of art that makes use of one of the most important media we now have - the Internet.
+		With this purchase, the Sammlung Volksfuersorge is supporting current directions in art. Ownership of a materially tangible art
+		work is not our concern; other sponsors make a sculpture or a painting available to the public in a museum. We find this more
+		appropriate for our time, and besides, we're making the work available to a broader public by doing this on the Internet and
+		with Net art.<br /><br />
+
+		C.S.: One of the fundamental problems with purchasing Net art is the administration of copyright and rights of ownership regarding
+		data that is online. What does it mean to you to be the owner of this generator?<br /><br />
+
+		Dr.L.: It was agreed that the net.art generator would have a user-friendly Web interface for anyone who might be interested in using
+		it. So the net.art generator is a sort of public work in our collection. We allow the "user" to create the art on his or her own.
+		Anyone can become a (Net) artist.<br /><br />
+
+		What's more, the code of the generator, that is, the program, is subject to a license, the so-called General Public License, GPL,
+		which makes it possible for the code to be freely modified and distributed.<br /><br />
+
+		C.S.: How will you be handling the needs that arise for the maintenance and administration of an online project?<br /><br />
+
+		Dr.L.: The budget for the art collection ensures that the work will be maintained by another company for two years. After two years,
+		we can decide how to carry on. (The costs aren't very high.)<br /><br />
+
+		C.S.: Could you imagine expanding further in this direction, that is, adding another work of Net art to the collection?<br /><br />
+
+		Dr.L.: The art collection has initially been set up to document exemplary works of contemporary art in various media immediately
+		after the turn of the millennium. The plan does not currently project much further than that, particularly since it's a collection
+		which principally has a single, immobile location &#151; the Hotel Royal Meridien. The net.art generator represents the widest reach
+		in terms of contact since it is accessible via the World Wide Web.<br /><br />
+		<br />
+		<br />
+		<br />
+	</div>
+
+</body>
+
+</html>
